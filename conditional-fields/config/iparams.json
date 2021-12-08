@@ -1,0 +1,33 @@
+{
+  "domain": {
+    "display_name": "Freshdesk domain",
+    "description": "Please enter your Freshdesk domain name",
+    "type": "domain",
+    "type_attributes": {
+      "product": "freshdesk"
+    },
+    "required": true
+  },
+  "api_key": {
+    "display_name": "Freshdesk API key",
+    "description": "Please enter your Freshdesk API key",
+    "type": "api_key",
+    "secure": true,
+    "required": true,
+    "type_attributes": {
+        "product": "freshdesk"
+    }
+  },
+  "custom_field_to_set": {
+    "display_name": "Set a custom field",
+    "description": "Please enter the custom field to set for requesters",
+    "type": "text",
+    "required": true
+  },
+  "custom_field_to_set_value": {
+    "display_name": "Set a custom field value",
+    "description": "Please enter the custom field value to set for requesters",
+    "type": "text",
+    "required": true
+  }
+}
