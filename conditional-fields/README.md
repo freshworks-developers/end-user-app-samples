@@ -16,4 +16,4 @@ If the current visitor portal matches the configured portal, the description fie
 
 1. Visitor app placeholder - The app placeholder that render apps for the visitor portal is used to run apps for every user visits
 2. Data Method - To get the portal information
-2. Installation Parameters - To configure the portal and fields to be modified
+3. Installation Parameters - To configure the portal and fields to be modified

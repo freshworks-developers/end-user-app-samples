@@ -1,0 +1,30 @@
+{ 
+  "client_id": "<%= oauth_iparams.client_id %>",
+  "client_secret": "<%= oauth_iparams.client_secret %>",
+  "authorize_url": "https://<%= oauth_iparams.shopify_store_name %>.myshopify.com/admin/oauth/authorize",
+  "token_url": "https://<%= oauth_iparams.shopify_store_name %>.myshopify.com/admin/oauth/access_token",
+  "options": {
+    "scope": "read_orders,read_customers"
+  },
+  "token_type": "account",
+  "oauth_iparams": {
+    "shopify_store_name": {
+      "display_name": "Shopify Store Name",
+      "description": "Please type the Shopify Store name. For example, 'sample-store' of https://sample-store.myshopify.com store URL.",
+      "type": "text",
+      "required": true
+    },
+    "client_id": {
+      "display_name": "Client ID/API key",
+      "description": "Please enter your client ID",
+      "type": "text",
+      "required": true
+    },
+    "client_secret": {
+      "display_name": "Client Secret/API secret key",
+      "description": "Please enter your client secret",
+      "type": "text",
+      "required": true
+    }
+  }
+}
