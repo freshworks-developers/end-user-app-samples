@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+
+.fw-widget-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.table{
+  font-size: 12px;
+  line-height: 18px;
+  color: #475867;
+}
+
+.table > tbody > tr> th {
+  background: #F5F7F9;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #475867;
+}
+.table > tbody> tr {
+  border: none;
+  border-bottom: 1px solid #EBEFF3;
+}
+.table > tbody> tr > td {
+  border: none;
+}
+/* .table > tbody> tr > td:nth-child(2) {
+  font-weight: 600;
+} */

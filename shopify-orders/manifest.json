@@ -1,0 +1,28 @@
+{
+  "platform-version": "2.2",
+  "product": {
+    "freshdesk": {
+      "location": {
+        "portal_tickets_new_sidebar": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      },
+      "functions": {
+        "getShopifyCustomer": {
+          "timeout": 20
+        },
+        "getShopifyCustomerOrders": {
+          "timeout": 20
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [
+    "https://*.myshopify.com"
+  ],
+  "engines": {
+    "node": "12.22.7",
+    "fdk": "7.1.2"
+  }
+}
