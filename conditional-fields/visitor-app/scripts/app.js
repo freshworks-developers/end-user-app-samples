@@ -33,7 +33,7 @@ async function onAppActivate() {
             console.error(error);
           }
         } else{
-          console.info("Skipped customisations for portal other than the configured portal");
+          console.info("Skipped customizations for portal other than the configured portal");
         }
     } catch (error) {
         console.error("Error: Failed to get portal type");
@@ -48,9 +48,9 @@ async function onAppActivate() {
 document.onreadystatechange = function () {
   if (document.readyState === 'interactive') renderApp();
 
-  function renderApp() {
+  async function renderApp() {
     try {
-      window.client = app.initialized();
+      window.client = await app.initialized();
       client.events.on('app.activated', onAppActivate);
     } catch (error) {
       console.error("Error: Failed to initialize app");
