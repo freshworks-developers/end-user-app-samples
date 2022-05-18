@@ -94,7 +94,7 @@ document.onreadystatechange = async function () {
     window.client = await app.initialized();
     client.events.on('app.activated', onAppActivate);
     } catch (error) {
-      console.error('Error: Failed to initialise the app');
+      console.error('Error: Failed to initialize the app');
       console.error(error);
     }
   }
