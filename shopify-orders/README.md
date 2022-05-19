@@ -18,7 +18,7 @@ If the user is logged in to the requester portal, this app fetches the user's re
 
 ### Platform features used
 
-1. End-user app placeholder - The app placeholder that render apps for the visitor portal is used to run apps for every user visits
+1. End-user app placeholder - The app placeholder that render apps for the customer portal is used to run apps for every user visits
 2. Data Method - To get the user information
 3. Installation Parameters - To configure the shopify store and API credentials
-4. OAuth - To authorise the app to Shopify store dynamically
+4. OAuth - To authorize the app to Shopify store dynamically
