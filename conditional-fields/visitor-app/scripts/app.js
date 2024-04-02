@@ -11,12 +11,12 @@ function getPortalType(){
 }
 
 async function onAppActivate() {
-
+  
   try {
-  const iparams = await getIparams();
-    try {
+    const iparams = await getIparams();
+        try {
       const portalData = await getPortalType();
-        if (portalData.portal.host === `${iparams.domain}.freshdesk.com`){
+              if (portalData.portal.host === `${iparams.domain}.freshdesk.com`){
           console.info(`The current portal is ${iparams.domain}.freshdesk.com`);
           try {
             await hideTicketField("description_html");

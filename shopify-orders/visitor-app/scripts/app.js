@@ -51,7 +51,7 @@ function showOrders(orders){
 async function fillOrders(email) {
   if(email){
     try {
-      const customerData = await client.request.invoke('getShopifyCustomer', { email });
+      const customerData = await client.request.invoke('getShopifyCustomer', { email: email });
       const customerId = customerData.response[0].id;
       try {
         const ordersData = await client.request.invoke('getShopifyCustomerOrders', { customerId });
@@ -75,7 +75,7 @@ async function fillOrders(email) {
  */
 async function onAppActivate() {
   try {
-  const userData = await client.data.get('user');
+    const userData = await client.data.get('user');
   await fillOrders(userData.user ? userData.user.email : userData.user);
   } catch (error) {
     console.error('Error: Failed ot get user data');
