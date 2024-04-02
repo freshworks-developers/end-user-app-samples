@@ -1,7 +1,7 @@
 {
-  "platform-version": "2.3",
-  "product": {
-    "freshdesk": {
+  "platform-version": "3.0",
+  "modules": {
+    "support_portal": {
       "location": {
         "portal_tickets_new_sidebar": {
           "url": "index.html",

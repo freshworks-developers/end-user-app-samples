@@ -13,7 +13,7 @@
       }
     },
     "options": {
-      "isOAuth": true
+      "oauth": "shopify"
     }
   },
   "getShopifyCustomerOrders": {
@@ -30,7 +30,7 @@
       }
     },
     "options": {
-      "isOAuth": true
+      "oauth": "shopify"
     }
   }
 }
