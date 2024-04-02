@@ -2,21 +2,15 @@
   "domain": {
     "display_name": "Freshdesk domain",
     "description": "Please enter your Freshdesk domain name",
-    "type": "domain",
-    "type_attributes": {
-      "product": "freshdesk"
-    },
+    "type": "text",
     "required": true
   },
   "api_key": {
     "display_name": "Freshdesk API key",
     "description": "Please enter your Freshdesk API key",
-    "type": "api_key",
+    "type": "text",
     "secure": true,
-    "required": true,
-    "type_attributes": {
-        "product": "freshdesk"
-    }
+    "required": true
   },
   "custom_field_to_set": {
     "display_name": "Set a custom field",
