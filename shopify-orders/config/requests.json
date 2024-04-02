@@ -1,0 +1,36 @@
+{
+  "shopifyCustomerSearch": {
+    "schema": {
+      "method": "GET",
+      "host": "<%= oauth_iparams.shopify_store_name %>.myshopify.com",
+      "path": "/admin/customers/search.json",
+      "query": {
+        "email": "<%= context.email %>",
+        "fields": "email,id"
+      },
+      "headers": {
+        "X-Shopify-Access-Token": "<%= access_token %>"
+      }
+    },
+    "options": {
+      "isOAuth": true
+    }
+  },
+  "getShopifyCustomerOrders": {
+    "schema": {
+      "method": "GET",
+      "host": "<%= oauth_iparams.shopify_store_name %>.myshopify.com",
+      "path": "/admin/api/2021-10/customers/<%= context.customerId %>/orders.json",
+      "query": {
+        "status": "any",
+        "fields": "created_at,id,order_number,total_price,presentment_currency,line_items,order_status_url"
+      },
+      "headers": {
+        "X-Shopify-Access-Token": "<%= access_token %>"
+      }
+    },
+    "options": {
+      "isOAuth": true
+    }
+  }
+}

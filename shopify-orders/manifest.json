@@ -1,5 +1,5 @@
 {
-  "platform-version": "2.2",
+  "platform-version": "2.3",
   "product": {
     "freshdesk": {
       "location": {
@@ -7,6 +7,10 @@
           "url": "index.html",
           "icon": "styles/images/icon.svg"
         }
+      },
+      "requests": {
+        "shopifyCustomerSearch": {},
+        "getShopifyCustomerOrders": {}
       },
       "functions": {
         "getShopifyCustomer": {
@@ -18,11 +22,8 @@
       }
     }
   },
-  "whitelisted-domains": [
-    "https://*.myshopify.com"
-  ],
   "engines": {
-    "node": "12.22.7",
-    "fdk": "7.1.2"
+    "node": "18.18.2",
+    "fdk": "9.1.0"
   }
 }
